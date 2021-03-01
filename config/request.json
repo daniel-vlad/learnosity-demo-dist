@@ -9,6 +9,23 @@
               "global_template": "edit"
             }
           },
+          "simple_feature_templates": [
+            {
+              "reference": "eb6156a3-decd-4ee7-8348-a09144ea1c4a"
+            }
+          ],
+          "rich_text_editor": {
+            "toolbar_settings": {
+              "ltr_toolbar": [
+                {
+                  "name": "simplefeature",
+                  "items": [
+                    "LrnSimpleFeature"
+                  ]
+                }
+              ]
+            }
+          },
           "question_type_groups": [
             {
               "name": "Custom Multiple Choice",
@@ -54,6 +71,11 @@
                           "type": "string",
                           "required": false
                         },
+                        "sideASound": {
+                          "name": "Sound",
+                          "type": "editor",
+                          "required": false
+                        },
                         "sideBImage": {
                           "name": "Image",
                           "type": "string",
@@ -66,6 +88,11 @@
                         "sideBText": {
                           "name": "Text",
                           "type": "string",
+                          "required": false
+                        },
+                        "sideBSound": {
+                          "name": "Sound",
+                          "type": "editor",
                           "required": false
                         }
                       }

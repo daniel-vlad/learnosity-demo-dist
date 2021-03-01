@@ -2,6 +2,23 @@
   <span data-lrn-qe-label="areas"></span>
   <span data-lrn-qe-input="areas"></span>
 
+  <div
+    class="lrn-qe-row-flex lrn-qe-padding-left-sm lrn-qe-padding-right-sm instruction-row"
+  >
+    <div
+      class="lrn-qe-col-xs-12 lrn-qe-col-sm-6"
+      lrn-qe-col-xs-12
+      lrn-qe-col-sm-6
+    >
+      <span data-lrn-qe-label="instructionLine"></span>
+      <span
+        data-lrn-qe-input="instructionLine"
+        data-lrn-qe-input="stimulus"
+        class="lrn-qe-ckeditor-lg"
+      ></span>
+    </div>
+  </div>
+
   <span data-lrn-qe-label="cards" data-lrn-qe-section="cards.heading"></span>
   <div class="lrn-qe-tabs" data-lrn-qe-tabs data-lrn-qe-section="cards.content">
     <ul class="lrn-qe-tab-header">
@@ -16,7 +33,15 @@
       <li>
         <span data-lrn-qe-action-add="cards" class="lrn-qe-tabs-add"></span>
       </li>
+      <li>
+        <span
+          data-lrn-qe-action-remove=""
+          ="cards"
+          class="lrn-qe-tabs-remove"
+        ></span>
+      </li>
     </ul>
+
     <div
       data-lrn-qe-loop="cards[*]"
       class="lrn-qe-tab-item"
@@ -24,25 +49,49 @@
       data-lrn-qe-layout-listeners="add,remove"
     >
       <div
-        class="lrn-qe-row-flex lrn-qe-padding-left-sm lrn-qe-padding-right-sm"
+        class="lrn-qe-row-flex lrn-qe-padding-left-sm lrn-qe-padding-right-sm card-wrapper"
       >
         <div
-          class="lrn-qe-col-xs-12 lrn-qe-col-sm-6"
-          data-lrn-qe-layout-wrapper
+          class="lrn-qe-col-xs-12 lrn-qe-col-sm-5"
+          lrn-qe-col-xs-12
+          lrn-qe-col-sm-6
         >
-          <span data-lrn-qe-label="cards[*].source"></span>
-          <span data-lrn-qe-input="cards[*].source"></span>
-        </div>
-        <div
-          class="lrn-qe-col-xs-12 lrn-qe-col-sm-6"
-          data-lrn-qe-layout-wrapper
-        >
-          <span data-lrn-qe-label="cards[*].description"></span>
-          <span data-lrn-qe-input="cards[*].description"></span>
+          <h1>Side A</h1>
+          <span data-lrn-qe-label="cards[*].sideAImage"></span>
+          <span data-lrn-qe-input="cards[*].sideAImage"></span>
+
+          <span data-lrn-qe-label="cards[*].sideAText"></span>
+          <span data-lrn-qe-input="cards[*].sideAText"></span>
+
+          <span data-lrn-qe-label="cards[*].sideASound"></span>
+          <span data-lrn-qe-input="cards[*].sideASound"></span>
         </div>
 
         <div
-          class="lrn-qe-col-xs-12 lrn-qe-col-sm-6"
+          class="lrn-qe-col-xs-12 lrn-qe-col-sm-5"
+          lrn-qe-col-xs-12
+          lrn-qe-col-sm-6
+        >
+          <h1>
+            Side B
+            <span class="disclaimer">
+              Note: if both fields are empty then everything from Side A will
+              apply.
+            </span>
+          </h1>
+
+          <span data-lrn-qe-label="cards[*].sideBImage"></span>
+          <span data-lrn-qe-input="cards[*].sideBImage"></span>
+
+          <span data-lrn-qe-label="cards[*].sideBText"></span>
+          <span data-lrn-qe-input="cards[*].sideBText"></span>
+
+          <span data-lrn-qe-label="cards[*].sideBSound"></span>
+          <span data-lrn-qe-input="cards[*].sideBSound"></span>
+        </div>
+
+        <div
+          class="lrn-qe-col-xs-12 lrn-qe-col-sm-5"
           data-lrn-qe-layout-wrapper
         >
           <span
