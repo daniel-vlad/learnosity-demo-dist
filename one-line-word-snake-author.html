@@ -1,0 +1,22 @@
+<div class="lrn-qe-edit-form">
+  <div class="lrn-qe-col-xs-12 lrn-qe-col-sm-6" data-lrn-qe-layout-wrapper>
+    <span data-lrn-qe-label="instructionLine"></span>
+    <span data-lrn-qe-input="instructionLine"></span>
+  </div>
+  <div class="lrn-qe-col-xs-12 lrn-qe-col-sm-6" data-lrn-qe-layout-wrapper>
+    <span data-lrn-qe-label="lettersPerLine"></span>
+    <span data-lrn-qe-input="lettersPerLine"></span>
+  </div>
+  <div class="lrn-qe-col-xs-12 lrn-qe-col-sm-6" data-lrn-qe-layout-wrapper>
+    <h2>Specify words:</h2>
+    <p><strong>Note: At least one word is required!</strong></p>
+    <div data-lrn-qe-loop="words[*]">
+      <span data-lrn-qe-label="words[*]"></span>
+      <span data-lrn-qe-input="words[*].word"></span>
+      <span data-lrn-qe-input="words[*].image"></span>
+    </div>
+    <div>
+      <span data-lrn-qe-action-add="words"></span>
+    </div>
+  </div>
+</div>

@@ -129,3 +129,7 @@
   .app .playground .card .front p {
     font-size: 13px; } }
 
+@media screen and (max-width: 599px) {
+  .app .playground .card .front p {
+    font-size: 13px; } }
+
