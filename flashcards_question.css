@@ -122,8 +122,6 @@
         box-shadow: none; }
         .app .playground .card.matched .front {
           border: 4px solid #7fbd32; }
-          .app .playground .card.matched .front img {
-            border-radius: 16px; }
 
 @media screen and (max-width: 599px) {
   .app .playground .card .front p {
