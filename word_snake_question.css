@@ -32,18 +32,37 @@
   .word-snake h2 {
     text-align: center;
     font-size: 16px; }
-  .word-snake__matrix {
+  .word-snake__matrix-wrapper {
+    position: relative;
     display: inline-block; }
+  .word-snake__selection {
+    position: absolute;
+    z-index: 5;
+    background-color: #413D51;
+    border-radius: 50px;
+    transition: width 0.2s, height 0.2s; }
+  .word-snake__matrix {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    cursor: url("/assets/images/cursor.png"), pointer; }
     .word-snake__matrix--line {
-      margin: 5px 0; }
+      margin: 0; }
     .word-snake__matrix--letter {
+      box-sizing: content-box !important;
       display: inline-block;
       width: 40px;
       height: 40px;
-      margin: 6px 4px;
+      padding: 6px 4px;
       line-height: 40px;
       font-size: 40px;
-      color: #D2D2D2; }
+      color: #d2d2d2;
+      cursor: url("/assets/images/cursor.png"), pointer;
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      user-select: none; }
       .word-snake__matrix--letter.focused {
         color: red; }
   .word-snake__images {
