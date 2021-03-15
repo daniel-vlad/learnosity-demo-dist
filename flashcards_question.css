@@ -3,25 +3,25 @@
  */
 @font-face {
   font-family: "Heinemann Roman";
-  src: url("/assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.woff") format("woff"), url("/assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.ttf") format("truetype");
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Heinemann Roman";
-  src: url("/assets/fonts/Heinemann-Roman/HeinemannRoman-BdIt.woff") format("woff"), url("/assets/fonts/Heinemann-Roman/HeinemannRoman-BdIt.ttf") format("truetype");
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BdIt.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BdIt.ttf") format("truetype");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: "Heinemann Roman";
-  src: url("/assets/fonts/Heinemann-Roman/HeinemannRoman-Blk.woff") format("woff"), url("/assets/fonts/Heinemann-Roman/HeinemannRoman-Blk.ttf") format("truetype");
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Blk.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Blk.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: "Heinemann Roman";
-  src: url("/assets/fonts/Heinemann-Roman/HeinemannRoman-BlkIt.woff") format("woff"), url("/assets/fonts/Heinemann-Roman/HeinemannRoman-BlkIt.ttf") format("truetype");
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BlkIt.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BlkIt.ttf") format("truetype");
   font-weight: bold;
   font-style: italic; }
 
@@ -43,9 +43,11 @@
   width: 100%;
   margin: 20px auto;
   border-radius: 10px; }
-  .app h3.instructions {
+  .app .instructions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
     font-size: 16px;
-    font-weight: bold;
     text-align: center;
     color: #000; }
   .app .playground {
@@ -81,7 +83,6 @@
         width: 100%;
         height: 100%;
         border-radius: 20px;
-        transition: 0.6s;
         color: #000; }
       .app .playground .card .back {
         cursor: pointer;
@@ -97,13 +98,16 @@
         align-items: center;
         flex-direction: column;
         transform: rotateY(-180deg);
-        background: #f1f1f1; }
+        background: #f1f1f1;
+        overflow: hidden; }
         .app .playground .card .front img {
-          width: 70%; }
+          max-width: 100%;
+          object-fit: cover; }
         .app .playground .card .front p {
           margin: 0;
           padding: 0 5px;
           width: 100%;
+          min-height: 25px;
           font-size: 16px;
           font-weight: bold;
           color: #000; }
