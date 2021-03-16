@@ -80,21 +80,21 @@
     border-radius: 50px;
     transition: width 0.2s, height 0.2s; }
     .word-snake__selection.mismatch {
-      background: linear-gradient(180deg, #FA89A3 52.07%, #FA89A3 52.08%, #F85178 52.09%); }
+      background: linear-gradient(180deg, #fa89a3 52.07%, #fa89a3 52.08%, #f85178 52.09%); }
       .word-snake__selection.mismatch.horizontal {
         animation: shake-horizontal 0.5s linear; }
       .word-snake__selection.mismatch.diagonal {
         animation: shake-diagonal 0.5s linear; }
       .word-snake__selection.mismatch.vertical {
-        background: linear-gradient(90deg, #FA89A3 52.07%, #FA89A3 52.08%, #F85178 52.09%);
+        background: linear-gradient(90deg, #fa89a3 52.07%, #fa89a3 52.08%, #f85178 52.09%);
         animation: shake-vertical 0.5s linear; }
   .word-snake__matched {
     position: absolute;
     z-index: 7;
-    background: linear-gradient(180deg, #A8D274 52.08%, #76C09E 52.09%, #7FBD32 52.1%);
+    background: linear-gradient(180deg, #a8d274 52.08%, #76c09e 52.09%, #7fbd32 52.1%);
     border-radius: 50px; }
     .word-snake__matched.vertical {
-      background: linear-gradient(90deg, #A8D274 52.08%, #76C09E 52.09%, #7FBD32 52.1%); }
+      background: linear-gradient(90deg, #a8d274 52.08%, #76c09e 52.09%, #7fbd32 52.1%); }
     .word-snake__matched img {
       opacity: 0; }
   .word-snake__shine-top {
@@ -158,4 +158,28 @@
       width: 64px;
       height: 64px;
       border-radius: 50%; }
+  @media all and (max-width: 1099px) {
+    .word-snake__matrix--letter {
+      font-size: 30px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px; } }
+  @media all and (max-width: 899px) {
+    .word-snake__matrix--letter {
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px; } }
+  @media all and (max-width: 699px) {
+    .word-snake__matrix--letter {
+      font-size: 16px;
+      width: 16px;
+      height: 16px;
+      line-height: 16px; } }
+  @media all and (max-width: 615px) {
+    .word-snake__matrix--letter {
+      font-size: 13px;
+      width: 13px;
+      height: 13px;
+      line-height: 13px; } }
 
