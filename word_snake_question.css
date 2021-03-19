@@ -136,7 +136,8 @@
     z-index: 10;
     cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
     .word-snake__matrix--line {
-      margin: 0; }
+      margin: 0;
+      display: flex; }
     .word-snake__matrix--letter {
       box-sizing: content-box !important;
       display: inline-block;
