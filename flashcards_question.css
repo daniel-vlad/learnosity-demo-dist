@@ -101,7 +101,7 @@
         background: #f1f1f1;
         overflow: hidden; }
         .app .playground .card .front img {
-          max-width: 100%;
+          width: 100%;
           object-fit: cover; }
         .app .playground .card .front p {
           margin: 0;
