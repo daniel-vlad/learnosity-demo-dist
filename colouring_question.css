@@ -14,10 +14,11 @@ input {
   display: flex; }
 
 .instructions {
-  justify-content: center;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  word-break: break-all; }
+  margin: 15px 0;
+  word-break: break-word; }
   .instructions p {
     margin: 0; }
 
