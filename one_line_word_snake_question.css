@@ -46,7 +46,7 @@
 .word-snake {
   font-family: "Heinemann Roman", Arial, sans-serif;
   text-align: center;
-  background: url("/assets/images/card-pattern.svg");
+  background: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/card-pattern.svg");
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -61,10 +61,10 @@
     display: inline-block; }
   .word-snake__line {
     position: relative;
-    display: inline-block;
+    display: flex;
     margin: 0;
     z-index: 10;
-    cursor: url("/assets/images/cursor.png"), pointer; }
+    cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
   .word-snake__letter {
     box-sizing: content-box !important;
     display: inline-block;
@@ -74,7 +74,7 @@
     line-height: 40px;
     font-size: 40px;
     color: #d2d2d2;
-    cursor: url("/assets/images/cursor.png"), pointer; }
+    cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
     .word-snake__letter.focused {
       color: #fff; }
   .word-snake__selection {
