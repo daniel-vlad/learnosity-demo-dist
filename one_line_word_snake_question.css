@@ -53,7 +53,9 @@
   /* Safari */
   user-select: none;
   padding-bottom: 150px; }
-  .word-snake h2 {
+  .word-snake__title {
+    margin: 0;
+    padding: 20px 10px 12px 10px;
     text-align: center;
     font-size: 16px; }
   .word-snake__wrapper {

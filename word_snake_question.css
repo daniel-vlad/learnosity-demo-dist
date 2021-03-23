@@ -67,7 +67,7 @@
   font-family: "Heinemann Roman", Arial, sans-serif;
   text-align: center;
   background: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/card-pattern.svg"); }
-  .word-snake h2 {
+  .word-snake__title {
     margin: 0;
     padding: 20px 10px 12px 10px;
     text-align: center;
