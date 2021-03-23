@@ -80,7 +80,7 @@
     z-index: 5;
     background-color: #413d51;
     border-radius: 50px;
-    transition: width 0.2s, height 0.2s; }
+    transition: all 0.2s; }
     .word-snake__selection.mismatch {
       background: linear-gradient(180deg, #fa89a3 52.07%, #fa89a3 52.08%, #f85178 52.09%); }
       .word-snake__selection.mismatch.horizontal {
