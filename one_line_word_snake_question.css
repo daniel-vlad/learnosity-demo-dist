@@ -128,11 +128,27 @@
   .word-snake__shine-top.sparkle img:last-child, .word-snake__shine-bottom.sparkle img:last-child {
     animation: sparkle 2s linear 0.3s; }
   .word-snake__images {
-    margin-top: 15px; }
-    .word-snake__images img {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%; }
+    margin-top: 40px; }
+    .word-snake__images .word-image {
+      display: inline-block;
+      position: relative;
+      margin: 0 5px; }
+      .word-snake__images .word-image__check {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        line-height: 24px;
+        background: #7fbd32;
+        border-radius: 8px; }
+        .word-snake__images .word-image__check > img {
+          vertical-align: middle; }
+      .word-snake__images .word-image > img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%; }
   @media all and (max-width: 1099px) {
     .word-snake__letter {
       font-size: 30px;
