@@ -149,28 +149,4 @@
         width: 64px;
         height: 64px;
         border-radius: 50%; }
-  @media all and (max-width: 1099px) {
-    .word-snake__letter {
-      font-size: 30px;
-      width: 30px;
-      height: 30px;
-      line-height: 30px; } }
-  @media all and (max-width: 899px) {
-    .word-snake__letter {
-      font-size: 20px;
-      width: 20px;
-      height: 20px;
-      line-height: 20px; } }
-  @media all and (max-width: 699px) {
-    .word-snake__letter {
-      font-size: 16px;
-      width: 16px;
-      height: 16px;
-      line-height: 16px; } }
-  @media all and (max-width: 615px) {
-    .word-snake__letter {
-      font-size: 13px;
-      width: 13px;
-      height: 13px;
-      line-height: 13px; } }
 
