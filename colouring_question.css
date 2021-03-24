@@ -1,32 +1,39 @@
 input {
-  display: none;
-}
+  display: none; }
+
+@keyframes shake-horizontal {
+  0% {
+    transform: translateX(-5px); }
+  25% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(5px); }
+  100% {
+    transform: translateX(0); } }
+
+.shake-horizontal {
+  animation: shake-horizontal 0.5s linear; }
 
 .shapes {
   width: 100%;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.shapes canvas {
-  cursor: pointer;
-}
+  justify-content: space-evenly; }
+  .shapes canvas {
+    cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
 
 .content {
-  display: flex;
-}
+  display: flex; }
 
 .instructions {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 15px 0;
-  word-break: break-word;
-}
-.instructions p {
-  margin: 0;
-}
+  word-break: break-word; }
+  .instructions p {
+    margin: 0; }
 
 .menu {
   display: flex;
@@ -34,12 +41,10 @@ input {
   background-color: #413d51;
   border-radius: 16px;
   width: 60px;
-  height: 100%;
-}
-.menu label {
-  display: flex;
-  justify-content: space-evenly;
-}
+  height: 100%; }
+  .menu label {
+    display: flex;
+    justify-content: space-evenly; }
 
 .button {
   display: inline-block;
@@ -47,8 +52,7 @@ input {
   width: 24px;
   height: 24px;
   margin: 10px;
-  cursor: pointer;
-}
+  cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
 
 .button span {
   display: block;
@@ -65,13 +69,11 @@ input {
   border-radius: 100%;
   background: #eeeeee;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  transition: ease 0.3s;
-}
+  transition: ease 0.3s; }
 
 .selected-menu-item {
   align-self: center;
-  margin-left: -7px;
-}
+  margin-left: -7px; }
 
 input:checked ~ .button span:after {
   content: " ";
@@ -89,9 +91,8 @@ input:checked ~ .button span:after {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
   position: absolute;
-  left: 45%;
-}
+  left: 45%; }
 
 .button span:hover {
-  padding: 10px;
-}
+  padding: 10px; }
+
