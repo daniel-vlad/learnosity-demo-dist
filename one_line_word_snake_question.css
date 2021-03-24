@@ -53,7 +53,9 @@
   /* Safari */
   user-select: none;
   padding-bottom: 150px; }
-  .word-snake h2 {
+  .word-snake__title {
+    margin: 0;
+    padding: 20px 10px 12px 10px;
     text-align: center;
     font-size: 16px; }
   .word-snake__wrapper {
@@ -126,33 +128,25 @@
   .word-snake__shine-top.sparkle img:last-child, .word-snake__shine-bottom.sparkle img:last-child {
     animation: sparkle 2s linear 0.3s; }
   .word-snake__images {
-    margin-top: 15px; }
-    .word-snake__images img {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%; }
-  @media all and (max-width: 1099px) {
-    .word-snake__letter {
-      font-size: 30px;
-      width: 30px;
-      height: 30px;
-      line-height: 30px; } }
-  @media all and (max-width: 899px) {
-    .word-snake__letter {
-      font-size: 20px;
-      width: 20px;
-      height: 20px;
-      line-height: 20px; } }
-  @media all and (max-width: 699px) {
-    .word-snake__letter {
-      font-size: 16px;
-      width: 16px;
-      height: 16px;
-      line-height: 16px; } }
-  @media all and (max-width: 615px) {
-    .word-snake__letter {
-      font-size: 13px;
-      width: 13px;
-      height: 13px;
-      line-height: 13px; } }
+    margin-top: 40px; }
+    .word-snake__images .word-image {
+      display: inline-block;
+      position: relative;
+      margin: 0 5px; }
+      .word-snake__images .word-image__check {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        line-height: 24px;
+        background: #7fbd32;
+        border-radius: 8px; }
+        .word-snake__images .word-image__check > img {
+          vertical-align: middle; }
+      .word-snake__images .word-image > img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%; }
 

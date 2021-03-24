@@ -67,7 +67,7 @@
   font-family: "Heinemann Roman", Arial, sans-serif;
   text-align: center;
   background: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/card-pattern.svg"); }
-  .word-snake h2 {
+  .word-snake__title {
     margin: 0;
     padding: 20px 10px 12px 10px;
     text-align: center;
@@ -80,7 +80,7 @@
     z-index: 5;
     background-color: #413d51;
     border-radius: 50px;
-    transition: width 0.2s, height 0.2s; }
+    transition: all 0.2s; }
     .word-snake__selection.mismatch {
       background: linear-gradient(180deg, #fa89a3 52.07%, #fa89a3 52.08%, #f85178 52.09%); }
       .word-snake__selection.mismatch.horizontal {
@@ -161,28 +161,4 @@
       width: 64px;
       height: 64px;
       border-radius: 50%; }
-  @media all and (max-width: 1099px) {
-    .word-snake__matrix--letter {
-      font-size: 30px;
-      width: 30px;
-      height: 30px;
-      line-height: 30px; } }
-  @media all and (max-width: 899px) {
-    .word-snake__matrix--letter {
-      font-size: 20px;
-      width: 20px;
-      height: 20px;
-      line-height: 20px; } }
-  @media all and (max-width: 699px) {
-    .word-snake__matrix--letter {
-      font-size: 16px;
-      width: 16px;
-      height: 16px;
-      line-height: 16px; } }
-  @media all and (max-width: 615px) {
-    .word-snake__matrix--letter {
-      font-size: 13px;
-      width: 13px;
-      height: 13px;
-      line-height: 13px; } }
 
