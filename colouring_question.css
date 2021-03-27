@@ -14,6 +14,37 @@ input {
 .shake-horizontal {
   animation: shake-horizontal 0.5s linear; }
 
+.shape {
+  position: relative;
+  margin: 0 5px; }
+
+img.glitter-star {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  animation: glitter 2s linear 0s normal;
+  -webkit-animation: glitter 2s 0s normal;
+  -moz-animation: glitter 2s linear 0s normal;
+  -ms-animation: glitter 2s linear 0s normal;
+  -o-animation: glitter 2s linear 0s normal; }
+
+@keyframes glitter {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 1; }
+  25% {
+    -webkit-transform: scale(0.5);
+    opacity: 0; }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1; }
+  75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1; } }
+
 .shapes {
   width: 100%;
   align-items: center;
