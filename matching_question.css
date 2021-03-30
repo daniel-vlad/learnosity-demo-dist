@@ -28,9 +28,9 @@
 @keyframes error-shake {
   0% {
     transform: translateX(0); }
-  35% {
-    transform: translateX(0); }
   60% {
+    transform: translateX(0); }
+  75% {
     transform: translateX(-8px); }
   85% {
     transform: translateX(0); }
@@ -43,8 +43,16 @@
   100% {
     transform: translateX(0); } }
 
+@keyframes sparkle {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 .matching {
-  padding: 10px;
+  padding: 10px 10px 30px 10px;
   font-family: "Heinemann Roman", Arial, sans-serif;
   text-align: center;
   background: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/card-pattern.svg"); }
@@ -82,6 +90,8 @@
       box-shadow: 0 0 16px #e6e6e6;
       border-radius: 50%;
       cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
+      .matching__indication .card-player.pause {
+        background: transparent url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/pause-button.png"); }
     .matching__indication img {
       max-height: 80px;
       width: auto; }
@@ -100,7 +110,12 @@
     border: 7px solid #403d4f;
     border-radius: 16px;
     background: #fff;
-    cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
+    cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    user-select: none; }
     .matching__card:last-child {
       margin-right: 0; }
     .matching__card::after {
@@ -120,7 +135,7 @@
         opacity: 1; }
     .matching__card.error {
       border-color: #de1b24;
-      animation: error-shake 1.4s linear; }
+      animation: error-shake 0.8s linear; }
     .matching__card img {
       width: auto;
       height: 100%;
@@ -139,4 +154,45 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
+  .matching__shine-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    width: 30px;
+    height: 30px; }
+    .matching__shine-top img:first-child {
+      margin-top: 15px; }
+    .matching__shine-top img:last-child {
+      margin-left: 5px; }
+  .matching__shine-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    bottom: -18px;
+    right: -18px;
+    width: 30px;
+    height: 30px; }
+    .matching__shine-bottom img:first-child {
+      margin-right: 5px; }
+    .matching__shine-bottom img:last-child {
+      margin-bottom: 15px; }
+  .matching__shine-top img, .matching__shine-bottom img {
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    opacity: 0; }
+  .matching__shine-top.sparkle img:first-child, .matching__shine-bottom.sparkle img:first-child {
+    animation: sparkle 2s; }
+  .matching__shine-top.sparkle img:last-child, .matching__shine-bottom.sparkle img:last-child {
+    animation: sparkle 2s linear 0.3s; }
+
+@media screen and (max-width: 599px) {
+  .matching__card p {
+    font-size: 13px; } }
 
