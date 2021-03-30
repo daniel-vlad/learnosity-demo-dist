@@ -143,6 +143,8 @@
       max-width: 90%;
       max-height: 90%;
       margin: 5px; }
+      .matching__card img.with-text {
+        max-height: 65%; }
     .matching__card p {
       width: 100%;
       min-height: 25px;
