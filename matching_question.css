@@ -86,6 +86,7 @@
       width: 66px;
       height: 66px;
       border: none;
+      outline: none;
       background: transparent url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/play-button.png");
       box-shadow: 0 0 16px #e6e6e6;
       border-radius: 50%;
