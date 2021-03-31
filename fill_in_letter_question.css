@@ -1,0 +1,160 @@
+/**
+ * Heinemann Roman
+ */
+@font-face {
+  font-family: "Heinemann Roman";
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Heinemann Roman";
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BdIt.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BdIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Heinemann Roman";
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Blk.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Blk.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Heinemann Roman";
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BlkIt.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BlkIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@keyframes sparkle {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.fill-in-letter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px 0 20px;
+  font-family: "Heinemann Roman", Arial, sans-serif;
+  background: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/card-pattern.svg"); }
+  .fill-in-letter__instructions {
+    margin: 0 !important;
+    padding: 20px 10px 12px 10px;
+    text-align: center;
+    font-size: 16px; }
+  .fill-in-letter__sentence {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 470px; }
+    .fill-in-letter__sentence > p {
+      margin: 15px 0 !important; }
+    .fill-in-letter__sentence.no-image {
+      justify-content: center; }
+    .fill-in-letter__sentence > img {
+      width: 144px;
+      height: 144px;
+      margin-right: 25px;
+      border-radius: 50%; }
+  .fill-in-letter__letter {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000; }
+  .fill-in-letter__empty-spot {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    background: #c4c4c4;
+    border-radius: 50%;
+    cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
+    .fill-in-letter__empty-spot:first-child {
+      margin-left: 0; }
+    .fill-in-letter__empty-spot.selected {
+      border: 3px solid #a0a0a0; }
+  .fill-in-letter__distractors {
+    height: 64px;
+    padding: 12px;
+    margin-top: 40px;
+    border-radius: 32px;
+    background: #413d51; }
+    .fill-in-letter__distractors > span {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-left: 12px;
+      vertical-align: middle; }
+      .fill-in-letter__distractors > span:first-child {
+        margin-left: 0; }
+  .fill-in-letter__distractor {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: transform 0.7s, background-color 0.3s linear 1.2s, color 0.3s linear 1.2s, width 0.3s linear 0.2s, height 0.3s linear 0.2s, font-size 0.3s linear 1.2s;
+    cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
+    .fill-in-letter__distractor.selected {
+      margin: -3px auto auto -3px;
+      box-sizing: content-box;
+      border: 3px solid #c0c0c0; }
+    .fill-in-letter__distractor.shining {
+      background-color: #7fbd32;
+      font-size: 32px;
+      color: #fff;
+      width: 44px;
+      height: 44px; }
+    .fill-in-letter__distractor.matched {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #d2d2d2; }
+      .fill-in-letter__distractor.matched > span {
+        opacity: 0.1; }
+  .fill-in-letter__shine-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px; }
+    .fill-in-letter__shine-top img:first-child {
+      margin-top: 15px; }
+    .fill-in-letter__shine-top img:last-child {
+      margin-left: 5px; }
+  .fill-in-letter__shine-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px; }
+    .fill-in-letter__shine-bottom img:first-child {
+      margin-right: 5px; }
+    .fill-in-letter__shine-bottom img:last-child {
+      margin-bottom: 15px; }
+  .fill-in-letter__shine-top img, .fill-in-letter__shine-bottom img {
+    opacity: 0; }
+  .fill-in-letter__shine-top.sparkle img:first-child, .fill-in-letter__shine-bottom.sparkle img:first-child {
+    animation: sparkle 2s linear 1.4s; }
+  .fill-in-letter__shine-top.sparkle img:last-child, .fill-in-letter__shine-bottom.sparkle img:last-child {
+    animation: sparkle 2s linear 1.7s; }
+
