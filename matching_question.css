@@ -72,7 +72,7 @@
     align-items: center;
     width: 100%;
     height: 105px;
-    border: 7px solid #403d4f;
+    border: 5px solid #403d4f;
     border-radius: 16px;
     background: #fff; }
     .matching__indication.sound {
@@ -108,7 +108,7 @@
     width: 105px;
     height: 105px;
     margin: 10px 10px 0 0;
-    border: 7px solid #403d4f;
+    border: 5px solid #403d4f;
     border-radius: 16px;
     background: #fff;
     cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer;
@@ -137,25 +137,27 @@
     .matching__card.error {
       border-color: #de1b24;
       animation: error-shake 0.8s linear; }
+    .matching__card .card-image-wrapper {
+      flex-grow: 1;
+      overflow: hidden;
+      border-radius: 11px 11px 0 0; }
+      .matching__card .card-image-wrapper.without-text {
+        border-radius: 11px; }
     .matching__card img {
-      width: auto;
-      height: 100%;
-      max-width: 90%;
-      max-height: 90%;
-      margin: 5px; }
-      .matching__card img.with-text {
-        max-height: 65%; }
+      width: 100%;
+      object-fit: cover; }
     .matching__card p {
+      margin: 0 !important;
+      padding: 0 5px;
       width: 100%;
       min-height: 25px;
-      margin: 0 3px !important;
-      padding: 0 3px;
       font-size: 16px;
       font-weight: bold;
-      color: #000; }
-    .matching__card img + p {
+      color: #000;
+      word-break: break-word;
+      overflow: hidden; }
+    .matching__card .card-image-wrapper + p {
       white-space: nowrap;
-      overflow: hidden;
       text-overflow: ellipsis; }
   .matching__shine-top {
     display: flex;
