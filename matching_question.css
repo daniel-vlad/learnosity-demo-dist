@@ -87,12 +87,12 @@
       height: 66px;
       border: none;
       outline: none;
-      background: transparent url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/play-button.png");
+      background: transparent url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/play-button.svg");
       box-shadow: 0 0 16px #e6e6e6;
       border-radius: 50%;
       cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
       .matching__indication .card-player.pause {
-        background: transparent url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/pause-button.png"); }
+        background: transparent url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/pause-button.svg"); }
     .matching__indication img {
       max-height: 80px;
       width: auto; }
@@ -128,7 +128,7 @@
       height: 30px;
       opacity: 0;
       border-radius: 8px;
-      background: #81bb3d url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/check-mark.png") center no-repeat;
+      background: #81bb3d url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/check-mark.svg") center no-repeat;
       transition: opacity 0.7s linear 0.5s; }
     .matching__card.success {
       border-color: #81bb3d; }
