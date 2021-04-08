@@ -87,12 +87,12 @@
       height: 66px;
       border: none;
       outline: none;
-      background: transparent url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/play-button.svg");
+      background: #35A270 url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/play-button.svg") 0 0/100% 100% no-repeat;
       box-shadow: 0 0 16px #e6e6e6;
       border-radius: 50%;
       cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
       .matching__indication .card-player.pause {
-        background: transparent url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/pause-button.svg"); }
+        background: #35A270 url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/pause-button.svg") 0 0/100% 100% no-repeat; }
     .matching__indication img {
       max-height: 80px;
       width: auto; }
