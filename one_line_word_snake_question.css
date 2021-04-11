@@ -43,7 +43,7 @@
   100% {
     opacity: 0; } }
 
-.word-snake {
+.one-line-word-snake {
   font-family: "Heinemann Roman", Arial, sans-serif;
   text-align: center;
   background: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/card-pattern.svg");
@@ -53,21 +53,21 @@
   /* Safari */
   user-select: none;
   padding-bottom: 150px; }
-  .word-snake__title {
+  .one-line-word-snake__title {
     margin: 0;
     padding: 20px 10px 12px 10px;
     text-align: center;
     font-size: 16px; }
-  .word-snake__wrapper {
+  .one-line-word-snake__wrapper {
     position: relative;
     display: inline-block; }
-  .word-snake__line {
+  .one-line-word-snake__line {
     position: relative;
     display: flex;
     margin: 0;
     z-index: 10;
     cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
-  .word-snake__letter {
+  .one-line-word-snake__letter {
     box-sizing: content-box !important;
     display: inline-block;
     width: 40px;
@@ -77,18 +77,18 @@
     font-size: 40px;
     color: #d2d2d2;
     cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
-    .word-snake__letter.focused {
+    .one-line-word-snake__letter.focused {
       color: #fff; }
-  .word-snake__selection {
+  .one-line-word-snake__selection {
     position: absolute;
     z-index: 5;
     background-color: #413d51;
     border-radius: 50px;
     transition: width 0.2s, height 0.2s; }
-    .word-snake__selection.mismatch {
+    .one-line-word-snake__selection.mismatch {
       background: linear-gradient(180deg, #fa89a3 52.07%, #fa89a3 52.08%, #f85178 52.09%);
       animation: shake-horizontal 0.5s linear; }
-  .word-snake__shine-top {
+  .one-line-word-snake__shine-top {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -97,20 +97,20 @@
     left: -10px;
     width: 30px;
     height: 30px; }
-    .word-snake__shine-top img:first-child {
+    .one-line-word-snake__shine-top img:first-child {
       margin-top: 15px; }
-    .word-snake__shine-top img:last-child {
+    .one-line-word-snake__shine-top img:last-child {
       margin-left: 5px; }
-  .word-snake__matched {
+  .one-line-word-snake__matched {
     position: absolute;
     z-index: 7;
     background: linear-gradient(180deg, #a8d274 52.08%, #76c09e 52.09%, #7fbd32 52.1%);
     border-radius: 50px; }
-    .word-snake__matched.vertical {
+    .one-line-word-snake__matched.vertical {
       background: linear-gradient(90deg, #a8d274 52.08%, #76c09e 52.09%, #7fbd32 52.1%); }
-    .word-snake__matched img {
+    .one-line-word-snake__matched img {
       opacity: 0; }
-  .word-snake__shine-bottom {
+  .one-line-word-snake__shine-bottom {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -119,21 +119,21 @@
     right: -10px;
     width: 30px;
     height: 30px; }
-    .word-snake__shine-bottom img:first-child {
+    .one-line-word-snake__shine-bottom img:first-child {
       margin-right: 5px; }
-    .word-snake__shine-bottom img:last-child {
+    .one-line-word-snake__shine-bottom img:last-child {
       margin-bottom: 15px; }
-  .word-snake__shine-top.sparkle img:first-child, .word-snake__shine-bottom.sparkle img:first-child {
+  .one-line-word-snake__shine-top.sparkle img:first-child, .one-line-word-snake__shine-bottom.sparkle img:first-child {
     animation: sparkle 2s; }
-  .word-snake__shine-top.sparkle img:last-child, .word-snake__shine-bottom.sparkle img:last-child {
+  .one-line-word-snake__shine-top.sparkle img:last-child, .one-line-word-snake__shine-bottom.sparkle img:last-child {
     animation: sparkle 2s linear 0.3s; }
-  .word-snake__images {
+  .one-line-word-snake__images {
     margin-top: 40px; }
-    .word-snake__images .word-image {
+    .one-line-word-snake__images .word-image {
       display: inline-block;
       position: relative;
       margin: 0 5px; }
-      .word-snake__images .word-image__check {
+      .one-line-word-snake__images .word-image__check {
         position: absolute;
         top: -6px;
         right: -6px;
@@ -143,11 +143,11 @@
         line-height: 24px;
         background: #7fbd32;
         border-radius: 8px; }
-        .word-snake__images .word-image__check > img {
+        .one-line-word-snake__images .word-image__check > img {
           vertical-align: middle;
           width: 15px;
           margin-top: -3px; }
-      .word-snake__images .word-image > img {
+      .one-line-word-snake__images .word-image > img {
         width: 64px;
         height: 64px;
         border-radius: 50%; }
