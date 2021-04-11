@@ -144,7 +144,9 @@
         background: #7fbd32;
         border-radius: 8px; }
         .word-snake__images .word-image__check > img {
-          vertical-align: middle; }
+          vertical-align: middle;
+          width: 15px;
+          margin-top: -3px; }
       .word-snake__images .word-image > img {
         width: 64px;
         height: 64px;
