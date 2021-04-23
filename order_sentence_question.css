@@ -25,26 +25,126 @@
   font-weight: bold;
   font-style: italic; }
 
+@keyframes sparkle {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 * {
   box-sizing: border-box; }
 
 .order-sentence {
-  padding: 20px; }
-  .order-sentence__instructions {
+  padding: 20px;
+  font-family: "Heinemann Roman", Arial, sans-serif;
+  background: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/card-pattern.svg"); }
+  .order-sentence__missing-field-message {
+    font-size: 16px;
+    font-weight: bold;
     text-align: center; }
+  .order-sentence__instructions {
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 10px 15px 10px; }
   .order-sentence__shuffled-sentence {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
+    .order-sentence__shuffled-sentence.finished {
+      pointer-events: none; }
+  .order-sentence__item-with-underline {
+    border-bottom: 4px solid #d2d2d2;
+    margin-bottom: 24px;
+    flex-grow: 1;
+    cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
+  .order-sentence__underline-continuation {
+    flex-grow: 1000;
+    border-bottom: 4px solid #d2d2d2;
+    margin-bottom: 24px;
+    height: 54px;
+    pointer-events: none; }
   .order-sentence__item {
-    padding: 5px 8px;
-    cursor: pointer;
-    margin: 7px;
-    border: 1px solid #a00000;
-    background-color: bisque;
-    border-radius: 30px;
+    display: inline-block;
+    margin: 0 12px 10px 12px;
+    padding: 0 16px;
     min-width: 30px;
-    text-align: center; }
+    height: 40px;
+    line-height: 40px;
+    border-radius: 32px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2); }
   .order-sentence__controls {
-    text-align: center; }
+    margin-top: -24px;
+    padding: 30px 0;
+    text-align: center;
+    overflow: hidden; }
+    .order-sentence__controls .check-answer-wrapper {
+      display: inline-block;
+      position: relative;
+      top: 100px;
+      transition: top 0.5s; }
+      .order-sentence__controls .check-answer-wrapper.shown {
+        top: 0; }
+      .order-sentence__controls .check-answer-wrapper__shine-top {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        top: -18px;
+        left: -18px;
+        width: 30px;
+        height: 30px; }
+        .order-sentence__controls .check-answer-wrapper__shine-top img:first-child {
+          margin-top: 15px; }
+        .order-sentence__controls .check-answer-wrapper__shine-top img:last-child {
+          margin-left: 5px; }
+      .order-sentence__controls .check-answer-wrapper__shine-bottom {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: absolute;
+        bottom: -18px;
+        right: -18px;
+        width: 30px;
+        height: 30px; }
+        .order-sentence__controls .check-answer-wrapper__shine-bottom img:first-child {
+          margin-right: 5px; }
+        .order-sentence__controls .check-answer-wrapper__shine-bottom img:last-child {
+          margin-bottom: 15px; }
+      .order-sentence__controls .check-answer-wrapper__shine-top img, .order-sentence__controls .check-answer-wrapper__shine-bottom img {
+        width: auto;
+        height: auto;
+        max-width: none;
+        max-height: none;
+        margin: 0;
+        opacity: 0; }
+      .order-sentence__controls .check-answer-wrapper__shine-top.sparkle img:first-child, .order-sentence__controls .check-answer-wrapper__shine-bottom.sparkle img:first-child {
+        animation: sparkle 2s; }
+      .order-sentence__controls .check-answer-wrapper__shine-top.sparkle img:last-child, .order-sentence__controls .check-answer-wrapper__shine-bottom.sparkle img:last-child {
+        animation: sparkle 2s linear 0.3s; }
+    .order-sentence__controls .check-answer-button {
+      height: 48px;
+      line-height: 40px;
+      padding: 0 24px;
+      border: 4px solid #ffffff;
+      box-sizing: border-box;
+      border-radius: 60px;
+      font-family: "Heinemann Roman", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 900;
+      color: #413d51;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 50%, rgba(44, 167, 159, 0) 50.01%), #fcc73e;
+      box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.2);
+      outline: none;
+      cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
+      .order-sentence__controls .check-answer-button.correct {
+        background: linear-gradient(180deg, #a8d274 52.08%, #76c09e 52.09%, #7fbd32 52.1%);
+        color: #fff; }
+      .order-sentence__controls .check-answer-button.incorrect {
+        background: linear-gradient(180deg, #fa89a3 52.07%, #fa89a3 52.08%, #f85178 52.09%);
+        color: #fff; }
 
