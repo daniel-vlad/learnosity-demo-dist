@@ -25,6 +25,26 @@
   font-weight: bold;
   font-style: italic; }
 
+* {
+  box-sizing: border-box; }
+
 .order-sentence {
   padding: 20px; }
+  .order-sentence__instructions {
+    text-align: center; }
+  .order-sentence__shuffled-sentence {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .order-sentence__item {
+    padding: 5px 8px;
+    cursor: pointer;
+    margin: 7px;
+    border: 1px solid #a00000;
+    background-color: bisque;
+    border-radius: 30px;
+    min-width: 30px;
+    text-align: center; }
+  .order-sentence__controls {
+    text-align: center; }
 
