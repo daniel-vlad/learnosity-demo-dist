@@ -1,0 +1,115 @@
+<div className="lrn-qe-edit-form">
+  <div
+    class="lrn-qe-row-flex lrn-qe-padding-left-sm lrn-qe-padding-right-sm instruction-row"
+  >
+    <div
+      class="lrn-qe-col-xs-12 lrn-qe-col-sm-6"
+      lrn-qe-col-xs-12
+      lrn-qe-col-sm-6
+    >
+      <span data-lrn-qe-label="instructionLine"></span>
+      <span data-lrn-qe-input="instructionLine"></span>
+    </div>
+  </div>
+
+  <div class="lrn-qe-row-flex lrn-qe-padding-left-sm lrn-qe-padding-right-sm">
+    <div
+      class="lrn-qe-col-xs-12 lrn-qe-col-sm-6"
+      lrn-qe-col-xs-12
+      lrn-qe-col-sm-6
+    >
+      <h2>Puzzle specifications</h2>
+
+      <div
+        class="lrn-qe-col-xs-12 lrn-qe-col-sm-12 lrn-qe-padding-bottom-sm"
+        lrn-qe-col-xs-12
+        lrn-qe-col-sm-12
+      >
+        <span data-lrn-qe-label="mainImage"></span>
+        <span data-lrn-qe-input="mainImage"></span>
+      </div>
+
+      <div
+        class="lrn-qe-col-xs-12 lrn-qe-col-sm-12 lrn-qe-padding-bottom-sm"
+        lrn-qe-col-xs-12
+        lrn-qe-col-sm-12
+      >
+        <span data-lrn-qe-label="numberOfTiles"></span>
+        <span data-lrn-qe-input="numberOfTiles"></span>
+      </div>
+
+      <div
+        class="lrn-qe-col-xs-12 lrn-qe-col-sm-12 lrn-qe-padding-bottom-sm"
+        lrn-qe-col-xs-12
+        lrn-qe-col-sm-12
+      >
+        <span data-lrn-qe-label="missingTiles"></span>
+        <span data-lrn-qe-input="missingTiles"></span>
+      </div>
+
+      <span
+        data-lrn-qe-label="distractorImages"
+        data-lrn-qe-section="distractorImages.heading"
+      ></span>
+      <div
+        class="lrn-qe-tabs"
+        data-lrn-qe-tabs
+        data-lrn-qe-section="distractorImages.content"
+      >
+        <ul class="lrn-qe-tab-header">
+          <li
+            data-lrn-qe-loop="distractorImages[*]"
+            class="lrn-qe-tab-trigger"
+            data-lrn-qe-tab-trigger
+            data-lrn-qe-layout-listeners="add,remove"
+          >
+            <span data-lrn-qe-label="distractorImages[*]"></span>
+          </li>
+          <li>
+            <span
+              data-lrn-qe-action-add="distractorImages"
+              class="lrn-qe-tabs-add"
+            ></span>
+          </li>
+          <li>
+            <span
+              data-lrn-qe-action-remove=""
+              ="distractorImages"
+              class="lrn-qe-tabs-remove"
+            ></span>
+          </li>
+        </ul>
+
+        <div
+          data-lrn-qe-loop="distractorImages[*]"
+          class="lrn-qe-tab-item"
+          data-lrn-qe-tab-item
+          data-lrn-qe-layout-listeners="add,remove"
+        >
+          <div
+            class="lrn-qe-row-flex lrn-qe-padding-left-sm lrn-qe-padding-right-sm card-wrapper"
+          >
+            <div
+              class="lrn-qe-col-xs-12 lrn-qe-col-sm-12 lrn-qe-padding-top-md"
+              lrn-qe-col-xs-12
+              lrn-qe-col-sm-12
+            >
+              <span data-lrn-qe-label="distractorImages[*].image"></span>
+              <span data-lrn-qe-input="distractorImages[*].image"></span>
+            </div>
+
+            <div
+              class="lrn-qe-col-xs-12 lrn-qe-col-sm-5"
+              data-lrn-qe-layout-wrapper
+            >
+              <span
+                data-lrn-qe-action-remove="distractorImages[*]"
+                class="lrn-qe-top-right lrn-qe-padding-right-sm lrn-qe-padding-top-sm"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

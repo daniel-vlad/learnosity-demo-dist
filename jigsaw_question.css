@@ -1,0 +1,96 @@
+/**
+ * Heinemann Roman
+ */
+@font-face {
+  font-family: "Heinemann Roman";
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Heinemann Roman";
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BdIt.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BdIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Heinemann Roman";
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Blk.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Blk.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Heinemann Roman";
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BlkIt.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BlkIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+* {
+  box-sizing: border-box; }
+
+.jigsaw {
+  padding: 10px 10px 0 10px;
+  font-family: "Heinemann Roman", Arial, sans-serif;
+  background: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/card-pattern.svg");
+  text-align: center; }
+  .jigsaw__missing-field-message {
+    font-size: 16px;
+    font-weight: bold; }
+  .jigsaw__main-image {
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #413d51;
+    border-radius: 16px; }
+    .jigsaw__main-image--wrapper {
+      position: relative;
+      top: -2px;
+      left: -2px;
+      display: flex;
+      flex-direction: column;
+      box-sizing: content-box !important; }
+    .jigsaw__main-image--tile-row {
+      display: flex;
+      flex-grow: 1; }
+    .jigsaw__main-image--tile {
+      flex-grow: 1;
+      border: 1px solid #413d51;
+      box-sizing: content-box !important;
+      transition: all 0.3s; }
+      .jigsaw__main-image--tile.missing {
+        background: #fff !important;
+        cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
+        .jigsaw__main-image--tile.missing.selected {
+          background: #f85178 !important; }
+  .jigsaw__distractors {
+    display: inline-block;
+    height: 74px;
+    margin: 10px auto 0 auto;
+    padding: 12px;
+    background: #f85178;
+    border-radius: 16px; }
+    .jigsaw__distractors--image {
+      position: relative;
+      display: inline-block;
+      margin-left: 12px;
+      height: 50px;
+      width: 90px;
+      border-radius: 4px;
+      cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
+      .jigsaw__distractors--image:first-child {
+        margin-left: 0; }
+      .jigsaw__distractors--image::after {
+        content: "";
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        width: 22px;
+        height: 22px;
+        opacity: 0;
+        border-radius: 8px;
+        background: #81bb3d url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/check-mark.svg") center center/16px 16px no-repeat;
+        transition: opacity 0.5s linear; }
+      .jigsaw__distractors--image.selected {
+        border: 2px solid #a9072d; }
+      .jigsaw__distractors--image.matched::after {
+        opacity: 1; }
+
