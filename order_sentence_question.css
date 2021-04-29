@@ -51,23 +51,13 @@
   .order-sentence__shuffled-sentence {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: flex-start;
+    background: url("https://daniel-vlad.github.io/learnosity-demo-dist/order-sentence-assets/sentence-underline-bg.png"); }
     .order-sentence__shuffled-sentence.finished {
       pointer-events: none; }
-  .order-sentence__item-with-underline {
-    border-bottom: 4px solid #d2d2d2;
-    margin-bottom: 24px;
-    flex-grow: 1;
-    cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
-  .order-sentence__underline-continuation {
-    flex-grow: 1000;
-    border-bottom: 4px solid #d2d2d2;
-    margin-bottom: 24px;
-    height: 54px;
-    pointer-events: none; }
   .order-sentence__item {
     display: inline-block;
-    margin: 0 12px 10px 12px;
+    margin: 0 12px 38px 12px;
     padding: 0 16px;
     min-width: 30px;
     height: 40px;
