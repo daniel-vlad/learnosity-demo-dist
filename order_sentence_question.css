@@ -74,11 +74,7 @@
     overflow: hidden; }
     .order-sentence__controls .check-answer-wrapper {
       display: inline-block;
-      position: relative;
-      top: 100px;
-      transition: top 0.5s; }
-      .order-sentence__controls .check-answer-wrapper.shown {
-        top: 0; }
+      position: relative; }
       .order-sentence__controls .check-answer-wrapper__shine-top {
         display: flex;
         justify-content: flex-start;
