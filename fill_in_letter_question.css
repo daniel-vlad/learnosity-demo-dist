@@ -25,6 +25,9 @@
   font-weight: bold;
   font-style: italic; }
 
+.lrn .row {
+  width: 100%; }
+
 @keyframes sparkle {
   0% {
     opacity: 0; }
