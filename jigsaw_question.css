@@ -44,6 +44,8 @@
     overflow: hidden;
     border: 2px solid #413d51;
     border-radius: 16px; }
+    .jigsaw__main-image.completed .jigsaw__main-image--tile {
+      border: none; }
     .jigsaw__main-image--wrapper {
       position: relative;
       top: -2px;
@@ -58,7 +60,8 @@
       flex-grow: 1;
       border: 1px solid #413d51;
       box-sizing: content-box !important;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      background: transparent; }
       .jigsaw__main-image--tile.missing {
         background: #fff !important;
         cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
@@ -66,21 +69,23 @@
           background: #f85178 !important; }
   .jigsaw__distractors {
     display: inline-block;
-    height: 74px;
     margin: 10px auto 0 auto;
-    padding: 12px;
+    padding: 0 12px 12px 12px;
     background: #f85178;
-    border-radius: 16px; }
+    border-radius: 16px;
+    line-height: 0; }
     .jigsaw__distractors--image {
       position: relative;
       display: inline-block;
-      margin-left: 12px;
+      margin: 12px 12px 0 12px;
       height: 50px;
       width: 90px;
       border-radius: 4px;
       cursor: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/cursor.png"), pointer; }
       .jigsaw__distractors--image:first-child {
         margin-left: 0; }
+      .jigsaw__distractors--image:last-child {
+        margin-right: 0; }
       .jigsaw__distractors--image::after {
         content: "";
         position: absolute;
