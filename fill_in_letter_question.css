@@ -58,7 +58,8 @@
     align-items: center;
     min-width: 470px; }
     .fill-in-letter__sentence > p {
-      margin: 15px 0 !important; }
+      margin: 15px 0 !important;
+      line-height: 60px; }
     .fill-in-letter__sentence.no-image {
       justify-content: center; }
     .fill-in-letter__sentence > img {
@@ -87,11 +88,11 @@
     .fill-in-letter__empty-spot.selected {
       border: 3px solid #a0a0a0; }
   .fill-in-letter__distractors {
-    height: 64px;
     padding: 12px;
     margin-top: 40px;
     border-radius: 32px;
-    background: #413d51; }
+    background: #413d51;
+    text-align: center; }
     .fill-in-letter__distractors > span {
       position: relative;
       display: inline-block;
